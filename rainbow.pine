@@ -1,0 +1,109 @@
+//@version=4
+//
+//                        .-._                                                   _,-,
+//                         `._`-._                                           _,-'_,'
+//                            `._ `-._                                   _,-' _,'
+//                               `._  `-._        __.-----.__        _,-'  _,'
+//                                  `._   `#==="""           """===#'   _,'
+//                                     `._/)  ._               _.  (\_,'
+//                                      )*'     **.__     __.**     '*(
+//                                      #  .==..__  ""   ""  __..==,  #
+//                                      #   `"._(_).       .(_)_."'   #
+// /$$$$$$$$ /$$$$$$  /$$      /$$  /$$$$$$        /$$$$$$$  /$$$$$$$  /$$$$$$ /$$    /$$ /$$$$$$$$ /$$   /$$
+//| $$_____//$$__  $$| $$$    /$$$ /$$__  $$      | $$__  $$| $$__  $$|_  $$_/| $$   | $$| $$_____/| $$$ | $$
+//| $$     | $$  \ $$| $$$$  /$$$$| $$  \ $$      | $$  \ $$| $$  \ $$  | $$  | $$   | $$| $$      | $$$$| $$
+//| $$$$$  | $$  | $$| $$ $$/$$ $$| $$  | $$      | $$  | $$| $$$$$$$/  | $$  |  $$ / $$/| $$$$$   | $$ $$ $$
+//| $$__/  | $$  | $$| $$  $$$| $$| $$  | $$      | $$  | $$| $$__  $$  | $$   \  $$ $$/ | $$__/   | $$  $$$$
+//| $$     | $$  | $$| $$\  $ | $$| $$  | $$      | $$  | $$| $$  \ $$  | $$    \  $$$/  | $$      | $$\  $$$
+//| $$     |  $$$$$$/| $$ \/  | $$|  $$$$$$/      | $$$$$$$/| $$  | $$ /$$$$$$   \  $/   | $$$$$$$$| $$ \  $$
+//|__/      \______/ |__/     |__/ \______/       |_______/ |__/  |__/|______/    \_/    |________/|__/  \__/
+//
+//FOMO DRIVEN DEVELOPMENT [Filter > Entry > Exit > Timing > Survial]
+//DGNSREKT (2020)
+//
+
+TITLE = "FOMO DRIVEN DEVELOPMENT RAINBOW BARS"
+SHORT_TITLE = "[FDD] RAINBOW"
+
+study(title=TITLE, shorttitle=SHORT_TITLE, overlay=true)
+
+
+
+//GENERATED-START
+
+color_index = bar_index % 35
+
+bar_color =  color_index > 35 ? #FF0000 :
+     color_index > 34 ? #FF1E00 :
+         color_index > 33 ? #FF3C00 :
+             color_index > 32 ? #FF5A00 :
+                 color_index > 31 ? #FF7800 :
+                     color_index > 30 ? #FF9600 :
+                         color_index > 29 ? #FFB400 :
+                             color_index > 28 ? #FFD200 :
+                                 color_index > 27 ? #FFF000 :
+                                     color_index > 26 ? #F0FF00 :
+                                         color_index > 25 ? #D2FF00 :
+                                             color_index > 24 ? #B4FF00 :
+                                                 color_index > 23 ? #96FF00 :
+                                                     color_index > 22 ? #78FF00 :
+                                                         color_index > 21 ? #5AFF00 :
+                                                             color_index > 20 ? #3CFF00 :
+                                                                 color_index > 19 ? #1EFF00 :
+                                                                     color_index > 18 ? #00FF00 :
+                                                                         color_index > 17 ? #00FF1E :
+                                                                             color_index > 16 ? #00FF3C :
+                                                                                 color_index > 15 ? #00FF5A :
+                                                                                     color_index > 14 ? #00FF78 :
+                                                                                         color_index > 13 ? #00FF96 :
+                                                                                             color_index > 12 ? #00FFB4 :
+                                                                                                 color_index > 11 ? #00FFD2 :
+                                                                                                     color_index > 10 ? #00FFF0 :
+                                                                                                         color_index > 9 ? #00F0FF :
+                                                                                                             color_index > 8 ? #00D2FF :
+                                                                                                                 color_index > 7 ? #00B4FF :
+                                                                                                                     color_index > 6 ? #0096FF :
+                                                                                                                         color_index > 5 ? #0078FF :
+                                                                                                                             color_index > 4 ? #005AFF :
+                                                                                                                                 color_index > 3 ? #003CFF :
+                                                                                                                                     color_index > 2 ? #001EFF :
+                                                                                                                                         color_index > 1 ? #0000FF : #0000FF
+
+
+
+plot(sma(close, 1), color=#FF1E00)
+plot(sma(close, 2), color=#FF3C00)
+plot(sma(close, 3), color=#FF5A00)
+plot(sma(close, 4), color=#FF7800)
+plot(sma(close, 5), color=#FF9600)
+plot(sma(close, 6), color=#FFB400)
+plot(sma(close, 7), color=#FFD200)
+plot(sma(close, 8), color=#FFF000)
+plot(sma(close, 9), color=#F0FF00)
+plot(sma(close, 10), color=#D2FF00)
+plot(sma(close, 11), color=#B4FF00)
+plot(sma(close, 12), color=#96FF00)
+plot(sma(close, 13), color=#78FF00)
+plot(sma(close, 14), color=#5AFF00)
+plot(sma(close, 15), color=#3CFF00)
+plot(sma(close, 16), color=#1EFF00)
+plot(sma(close, 17), color=#00FF00)
+plot(sma(close, 18), color=#00FF1E)
+plot(sma(close, 19), color=#00FF3C)
+plot(sma(close, 20), color=#00FF5A)
+plot(sma(close, 21), color=#00FF78)
+plot(sma(close, 22), color=#00FF96)
+plot(sma(close, 23), color=#00FFB4)
+plot(sma(close, 24), color=#00FFD2)
+plot(sma(close, 25), color=#00FFF0)
+plot(sma(close, 26), color=#00F0FF)
+plot(sma(close, 27), color=#00D2FF)
+plot(sma(close, 28), color=#00B4FF)
+plot(sma(close, 29), color=#0096FF)
+plot(sma(close, 30), color=#0078FF)
+plot(sma(close, 31), color=#005AFF)
+plot(sma(close, 32), color=#003CFF)
+plot(sma(close, 33), color=#001EFF)
+plot(sma(close, 34), color=#0000FF)
+
+//GENERATED-END
