@@ -1,10 +1,13 @@
 from colour import Color
 
 MAX_COLORS = 35
+START_COLOR = "red"
+END_COLOR = "blue"
 
-red = Color("red")
-blue = Color("blue")
-colors = [c.get_hex_l().upper() for c in red.range_to(blue, MAX_COLORS)]
+start_color = Color(START_COLOR)
+end_color = Color(END_COLOR)
+
+colors = [c.get_hex_l().upper() for c in start_color.range_to(end_color, MAX_COLORS)]
 
 START_CODE_BLOCK = "bar_color = "
 CODE_BLOCK_ZERO = "color_index > {} ?"
