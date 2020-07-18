@@ -30,7 +30,10 @@ for idx, (color, pos) in enumerate(zip(colors, position)):
         print("    " * idx, CODE_BLOCK.format(pos, color))
 
 
-print("\n\n")
+print("\n")
+print("barcolor(bar_color)")
+print("\n")
+
 
 CODE_BLOCK = "plot(sma(close, {}), color={})"
 for idx, color in enumerate(colors):

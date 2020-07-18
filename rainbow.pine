@@ -70,6 +70,8 @@ bar_color =  color_index > 35 ? #FF0000 :
                                                                                                                                          color_index > 1 ? #0000FF : #0000FF
 
 
+barcolor(bar_color)
+
 
 plot(sma(close, 1), color=#FF1E00)
 plot(sma(close, 2), color=#FF3C00)
