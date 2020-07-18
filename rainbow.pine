@@ -28,7 +28,7 @@ SHORT_TITLE = "[FDD] RAINBOW"
 study(title=TITLE, shorttitle=SHORT_TITLE, overlay=true)
 
 
-
+//FULL SCRIPT at https://github.com/dgnsrekt/tradingview_rainbow
 //GENERATED-START
 
 color_index = bar_index % 35
